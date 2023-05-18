@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 public class Calculator {
     public Calculator(){
 
@@ -15,9 +14,8 @@ public class Calculator {
             }
         } catch (IllegalArgumentException e){
             System.out.println(e);
-            return 0;
         }
-        return num;
+            return num;
     }
     public int binomialCoefficient(int n, int k){
         int coefficient = 0;
@@ -31,7 +29,8 @@ public class Calculator {
             coefficient = (factorial(n) / (factorial(k) * factorial(n-k)));
         } catch (IllegalArgumentException e){
             System.out.println(e);
+            return k;
         }
-        return coefficient;
+            return coefficient;
     }
 }
